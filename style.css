@@ -1,0 +1,221 @@
+/* font families */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+  }
+  
+  /* applying font families & font sizes */
+  body {
+    color: #f5e9ff;;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* styling header 2 as a button for a more appealing look*/
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3e3ead;
+    background-color: #f5ceeb;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    border: 1px solid #d33665;
+    display: inline-block;
+ }
+  
+  /* background gradient */
+  body {
+    background: linear-gradient(to bottom right, #91b3f7, #8f267d, #315ab9);
+  }
+  
+  /* general styles for links */
+  a {
+    color: #0099ff;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* type selector to style headings */
+  h1 {
+    color: #d69bc0;
+    text-align: center;
+    font-size: 35px;
+    text-decoration:overline;
+    margin: 50px 0;
+    background-image: url('bluewater.jpg'); /* header image */
+    background-size: cover;
+    filter:saturate(250%); /* saturated for more colour */
+    filter: brightness(120%);/* brightened */
+    animation: pulse 3s infinite;/* pulse at this speed infinitly */
+  }
+  
+  /* class selector to style a group of elements */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0; /* adding margin to create space between elements */
+  }
+  
+  /* id selector to style a specific element */
+  #feature-1 {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px; /* adding margin to create space between elements */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* attribute selector to style a specific type of input */
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    width: 100%;
+  }
+  
+  /* pseudo-class selector to style links on hover */
+  a:hover {
+    color: #ffffff;
+    background-color: #bb3e9c;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  /* pseudo-element selector to customize first letter of each paragraph */
+  p::first-letter {
+    color: #927a96;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+
+  /* descendant combinator to style nested elements */
+  #feature-1 h3 {
+    color: #30422b;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #feature-1 p {
+    color: #4a4e4d;
+    font-size: 16px;
+  }
+  
+  /* child combinator to style direct children */
+  .features > div {
+    flex-basis: 30%;
+  }
+  
+  /* direct sibling combinator to style adjacent elements */
+  .features > div + div {
+    margin-left: 20px;
+    margin-top: 0; /* get rid of default margin to reduce space */
+  }
+  
+  /* general sibling combinator to style all siblings */
+  .features > div ~ div {
+    margin-top: 20px; /* adding margin to create space between elements */
+  }
+  
+  /* hover effect */
+  #feature-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+  }
+
+  /* creating a table for the design selection */
+.design-selection {
+    background: linear-gradient(to bottom right, #97077f, #61096d, #ce70cf);
+    padding: 8px;
+    border-radius: 2px;
+  }
+  
+  /* "Select a Design" heading styles */
+  .select {
+    background-color: #8a286c;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-size: 24px;
+    color: #d6c4df;
+    margin-bottom: 10px;
+  }
+  
+  /* navigation menu */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* style for the design & designer names */
+  .design-name, .designer-name {
+    color: #91acf7;
+    text-decoration:underline;
+    font-weight: bold;
+  }
+
+  /* placement of names*/
+  .designer-name {
+    margin-left: 10px;
+  }
+
+  /* creating a listed table for Resources */
+  .zen-resources ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  } 
+
+  /* row style table */
+  .zen-resources li {
+    display: table-row;
+  }
+
+  /* setting the styles within the table */
+  .zen-resources li a {
+    display: table-cell;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #60bbdf;
+  }
+
+  /* display different text & background color when hovering */
+  .zen-resources li a:hover {
+    background-color: #ffc4f7;
+    color: #1052e0;
+  }
+
+  /* pulsing effect for the header */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
